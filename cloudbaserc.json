@@ -1,0 +1,6 @@
+{
+  "envId": "blog-d1gsewdvta071bc9e",
+  "framework": "vite",
+  "buildCommand": "npm install && npm run build",
+  "outputPath": "dist"
+}
