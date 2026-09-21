@@ -2,13 +2,54 @@
 import type { Project } from '@/types'
 import { Calendar } from '@element-plus/icons-vue'
 
-defineProps<{
+const props = defineProps<{
   project: Project
 }>()
+
+const isExternal = !!props.project.externalUrl
 </script>
 
 <template>
+  <a
+    v-if="isExternal"
+    :href="project.externalUrl"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="project-card"
+  >
+    <div class="cover">
+      <el-image :src="project.cover" fit="cover" lazy class="cover-img">
+        <template #error>
+          <div class="cover-fallback">{{ project.title.charAt(0) }}</div>
+        </template>
+        <template #placeholder>
+          <div class="cover-placeholder">加载中…</div>
+        </template>
+      </el-image>
+    </div>
+    <div class="body">
+      <h3 class="title">{{ project.title }}</h3>
+      <p class="desc">{{ project.description }}</p>
+      <div class="tags">
+        <el-tag
+          v-for="tag in project.tags"
+          :key="tag"
+          size="small"
+          effect="plain"
+          round
+        >
+          {{ tag }}
+        </el-tag>
+      </div>
+      <div class="meta">
+        <el-icon><Calendar /></el-icon>
+        <span>{{ project.createdAt }}</span>
+      </div>
+    </div>
+    <span class="view-link">访问站点 ↗</span>
+  </a>
   <router-link
+    v-else
     :to="{ name: 'project-detail', params: { id: project.id } }"
     class="project-card"
   >

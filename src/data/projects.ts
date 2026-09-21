@@ -3,6 +3,17 @@ import type { Project } from '@/types'
 // 6 个示例项目。后续接入后端 API 时，将本文件替换为 axios 请求即可。
 export const projects: Project[] = [
   {
+    id: 7,
+    title: '数据可视化分析平台',
+    description: '基于 ECharts 的数据可视化大屏，集成柱状图、折线图、地图、雷达图、仪表盘等多种图表，实时展示业务指标。',
+    cover: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=dark%20blue%20futuristic%20data%20visualization%20dashboard%20with%20multiple%20charts%20bar%20line%20radar%20gauge%20neon%20glow%20tech%20UI&image_size=landscape_16_9',
+    tags: ['Vue3', 'ECharts', 'TypeScript', 'Vite'],
+    repoUrl: 'https://github.com/Yellow-4-2/echart',
+    externalUrl: 'https://echart-dpjcnczkf1vu.edgeone.cool/',
+    content: '基于 Vue3 + ECharts 5 的数据可视化分析平台。\n\n核心图表：\n- 月度访问量趋势（柱状图 + 均值标线）\n- 全国活跃用户分布（地图热力）\n- 24 小时流量监控（面积折线图）\n- 收入与支出对比（双 Y 轴折线）\n- 城市设备状态（堆叠柱状图）\n- 渠道来源占比（环形图）\n- 能力评估雷达（雷达图）\n- 设备使用率（仪表盘）\n- 资源使用率（进度条）',
+    createdAt: '2026-09-21'
+  },
+  {
     id: 1,
     title: '个人博客系统',
     description: '基于 Vue3 + TypeScript + Element Plus 搭建的个人博客，支持首页、文章列表、项目展示与详情独立路由。',

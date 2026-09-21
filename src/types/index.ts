@@ -8,4 +8,5 @@ export interface Project {
   demoUrl?: string
   content: string
   createdAt: string
+  externalUrl?: string
 }
