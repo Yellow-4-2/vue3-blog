@@ -9,7 +9,7 @@ export const projects: Project[] = [
     cover: `${import.meta.env.BASE_URL}covers/zhihui-hejie.png`,
     tags: ['Vue3', 'TypeScript', 'Element Plus', 'Vant', 'NestJS', 'JWT'],
     repoUrl: 'https://github.com/Yellow-4-2/zhihui-hejie',
-    externalUrl: 'https://zhihui-hejie-vlngt0ry.edgeone.cool/',
+    externalUrl: 'https://blog-d1gsewdvta071bc9e-1492806076.tcloudbaseapp.com/hejie/',
     content: '面向浙江省消保委业务场景的在线消费纠纷和解平台，覆盖「发起和解 → 受理 → 和解 → 完成/评价」全流程。\n\n角色与端：\n- 消保委：PC 管理端（Element Plus 深色侧边栏 + 数据看板）与移动端\n- 消费者：手机端发起和解、跟进进度、评价\n- 入驻企业：手机端受理与处理和解请求\n\n技术要点：\n- 一套代码同时适配 PC 与移动：Element Plus 与 Vant 双 UI 库共存，900px 断点由 CSS 媒体查询切换两套模板\n- postcss px-to-vw 方案配合目录级 exclude，避免 PC 样式被转成 vw 导致布局塌陷\n- Pinia + pinia-plugin-persistedstate 管理登录态与和解案件状态流转\n- 后端 NestJS 10 提供 JWT 鉴权、RBAC 角色守卫、用户 CRUD 与 Swagger 文档',
     createdAt: '2026-09-21'
   },
@@ -20,7 +20,7 @@ export const projects: Project[] = [
     cover: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=dark%20blue%20futuristic%20data%20visualization%20dashboard%20with%20multiple%20charts%20bar%20line%20radar%20gauge%20neon%20glow%20tech%20UI&image_size=landscape_16_9',
     tags: ['Vue3', 'ECharts', 'TypeScript', 'Vite'],
     repoUrl: 'https://github.com/Yellow-4-2/echart',
-    externalUrl: 'https://echart-dpjcnczkf1vu.edgeone.cool/',
+    externalUrl: 'https://blog-d1gsewdvta071bc9e-1492806076.tcloudbaseapp.com/echart/',
     content: '基于 Vue3 + ECharts 5 的数据可视化分析平台。\n\n核心图表：\n- 月度访问量趋势（柱状图 + 均值标线）\n- 全国活跃用户分布（地图热力）\n- 24 小时流量监控（面积折线图）\n- 收入与支出对比（双 Y 轴折线）\n- 城市设备状态（堆叠柱状图）\n- 渠道来源占比（环形图）\n- 能力评估雷达（雷达图）\n- 设备使用率（仪表盘）\n- 资源使用率（进度条）',
     createdAt: '2026-09-21'
   }
