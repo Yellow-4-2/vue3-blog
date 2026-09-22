@@ -9,7 +9,7 @@ export const projects: Project[] = [
     cover: `${import.meta.env.BASE_URL}covers/zhibojiance.png`,
     tags: ['Vue3', 'TypeScript', 'ECharts', 'Vue Router', 'Vite'],
     repoUrl: 'https://github.com/Yellow-4-2/zhibojiance',
-    externalUrl: 'https://blog-d1gsewdvta071bc9e-1492806076.tcloudbaseapp.com/zhibojiance/',
+    externalUrl: 'https://zhibojiance.pages.dev/',
     content: '面向直播电商合规场景的 AI 监测系统。\n\n核心功能：\n- 实时追踪在播主播状态，AI 自动识别主播话术中的功效夸大、违禁词、医疗暗示等违规内容\n- 违规记录自动关联商品链接，一键导出违规产品清单\n- 支持直播间视频留存到本地，作为违规取证依据\n\n技术架构：\n- 首页（Hash 路由 /）：4 个 KPI 卡片 + ECharts 三图（近 7 天违规趋势折线、违规类型饼图、主播违规排行柱状）+ 在播主播 / 历史主播 / 重点监测产品列表\n- 监测页（/monitor/:anchorId）：直播视频占位 + AI 违规面板（高/中/低风险分级 + 整改建议）+ 直播间产品清单 + 保存视频按钮\n- 数据层：mock 数据集中管理，预留真实接口接入位',
     createdAt: '2026-09-22'
   },
@@ -20,7 +20,7 @@ export const projects: Project[] = [
     cover: `${import.meta.env.BASE_URL}covers/zhihui-hejie.png`,
     tags: ['Vue3', 'TypeScript', 'Element Plus', 'Vant', 'NestJS', 'JWT'],
     repoUrl: 'https://github.com/Yellow-4-2/zhihui-hejie',
-    externalUrl: 'https://blog-d1gsewdvta071bc9e-1492806076.tcloudbaseapp.com/hejie/',
+    externalUrl: 'https://zhihui-hejie.pages.dev/',
     content: '面向浙江省消保委业务场景的在线消费纠纷和解平台，覆盖「发起和解 → 受理 → 和解 → 完成/评价」全流程。\n\n角色与端：\n- 消保委：PC 管理端（Element Plus 深色侧边栏 + 数据看板）与移动端\n- 消费者：手机端发起和解、跟进进度、评价\n- 入驻企业：手机端受理与处理和解请求\n\n技术要点：\n- 一套代码同时适配 PC 与移动：Element Plus 与 Vant 双 UI 库共存，900px 断点由 CSS 媒体查询切换两套模板\n- postcss px-to-vw 方案配合目录级 exclude，避免 PC 样式被转成 vw 导致布局塌陷\n- Pinia + pinia-plugin-persistedstate 管理登录态与和解案件状态流转\n- 后端 NestJS 10 提供 JWT 鉴权、RBAC 角色守卫、用户 CRUD 与 Swagger 文档',
     createdAt: '2026-09-21'
   },
@@ -31,7 +31,7 @@ export const projects: Project[] = [
     cover: `${import.meta.env.BASE_URL}covers/echart.jpg`,
     tags: ['Vue3', 'ECharts', 'TypeScript', 'Vite'],
     repoUrl: 'https://github.com/Yellow-4-2/echart',
-    externalUrl: 'https://blog-d1gsewdvta071bc9e-1492806076.tcloudbaseapp.com/echart/',
+    externalUrl: 'https://data-visualization-dashboard.pages.dev/',
     content: '基于 Vue3 + ECharts 5 的数据可视化分析平台。\n\n核心图表：\n- 月度访问量趋势（柱状图 + 均值标线）\n- 全国活跃用户分布（地图热力）\n- 24 小时流量监控（面积折线图）\n- 收入与支出对比（双 Y 轴折线）\n- 城市设备状态（堆叠柱状图）\n- 渠道来源占比（环形图）\n- 能力评估雷达（雷达图）\n- 设备使用率（仪表盘）\n- 资源使用率（进度条）',
     createdAt: '2026-09-21'
   }
