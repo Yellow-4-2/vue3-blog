@@ -6,7 +6,7 @@ export const projects: Project[] = [
     id: 8,
     title: '智慧和解平台',
     description: '消费维权在线和解平台，消保委/消费者/入驻企业三种角色，PC 与移动端双 UI 库响应式适配，NestJS + JWT 后端。',
-    cover: '/covers/zhihui-hejie.png',
+    cover: `${import.meta.env.BASE_URL}covers/zhihui-hejie.png`,
     tags: ['Vue3', 'TypeScript', 'Element Plus', 'Vant', 'NestJS', 'JWT'],
     repoUrl: 'https://github.com/Yellow-4-2/zhihui-hejie',
     externalUrl: 'https://zhihui-hejie-vlngt0ry.edgeone.cool/',
