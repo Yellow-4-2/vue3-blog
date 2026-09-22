@@ -3,6 +3,16 @@ import type { Project } from '@/types'
 // 2 个真实项目。后续接入后端 API 时，将本文件替换为 axios 请求即可。
 export const projects: Project[] = [
   {
+    id: 9,
+    title: '直播监测系统',
+    description: 'AI 驱动的直播间违规内容实时监测平台，支持违规话术识别、关联商品溯源、视频留存取证，Vue3 + ECharts 可视化首页。',
+    cover: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=dark%20tech%20live%20stream%20monitoring%20dashboard%20AI%20violation%20detection%20blue%20neon%20UI%20with%20live%20video%20preview%20panel%20and%20warning%20alerts&image_size=landscape_16_9',
+    tags: ['Vue3', 'TypeScript', 'ECharts', 'Vue Router', 'Vite'],
+    repoUrl: 'https://github.com/Yellow-4-2/zhibojiance',
+    content: '面向直播电商合规场景的 AI 监测系统。\n\n核心功能：\n- 实时追踪在播主播状态，AI 自动识别主播话术中的功效夸大、违禁词、医疗暗示等违规内容\n- 违规记录自动关联商品链接，一键导出违规产品清单\n- 支持直播间视频留存到本地，作为违规取证依据\n\n技术架构：\n- 首页（Hash 路由 /）：4 个 KPI 卡片 + ECharts 三图（近 7 天违规趋势折线、违规类型饼图、主播违规排行柱状）+ 在播主播 / 历史主播 / 重点监测产品列表\n- 监测页（/monitor/:anchorId）：直播视频占位 + AI 违规面板（高/中/低风险分级 + 整改建议）+ 直播间产品清单 + 保存视频按钮\n- 数据层：mock 数据集中管理，预留真实接口接入位',
+    createdAt: '2026-09-22'
+  },
+  {
     id: 8,
     title: '智慧和解平台',
     description: '消费维权在线和解平台，消保委/消费者/入驻企业三种角色，PC 与移动端双 UI 库响应式适配，NestJS + JWT 后端。',
