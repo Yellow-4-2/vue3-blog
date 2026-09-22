@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import { useRoute } from 'vue-router'
-import { Reading } from '@element-plus/icons-vue'
+import { Reading, Message } from '@element-plus/icons-vue'
+import { email } from '@/data/profile'
 
 const route = useRoute()
 
@@ -47,6 +48,10 @@ const year = new Date().getFullYear()
     <footer class="footer">
       <div class="container footer-inner">
         <span>© {{ year }} Yellow's Blog</span>
+        <a class="footer-contact" :href="`mailto:${email}`" title="发送邮件联系我">
+          <el-icon :size="15"><Message /></el-icon>
+          <span>{{ email }}</span>
+        </a>
       </div>
     </footer>
   </div>
@@ -126,7 +131,37 @@ const year = new Date().getFullYear()
   padding: 20px 24px;
   color: var(--text-secondary);
   font-size: 13px;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.footer-contact {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--text-secondary);
+  font-size: 13px;
+  line-height: 1;
+  transition: color 0.2s;
+}
+
+.footer-contact .el-icon {
+  flex-shrink: 0;
+  /* 信封图形在画布里视觉重心偏上，下移 1px 做光学对齐 */
+  transform: translateY(1px);
+}
+
+.footer-contact span {
+  display: inline-flex;
+  align-items: center;
+  line-height: 1;
+}
+
+.footer-contact:hover {
+  color: var(--brand-color);
 }
 
 @media (max-width: 640px) {
