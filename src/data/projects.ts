@@ -28,7 +28,7 @@ export const projects: Project[] = [
     id: 7,
     title: '数据可视化分析平台',
     description: '基于 ECharts 的数据可视化大屏，集成柱状图、折线图、地图、雷达图、仪表盘等多种图表，实时展示业务指标。',
-    cover: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=dark%20blue%20futuristic%20data%20visualization%20dashboard%20with%20multiple%20charts%20bar%20line%20radar%20gauge%20neon%20glow%20tech%20UI&image_size=landscape_16_9',
+    cover: `${import.meta.env.BASE_URL}covers/echart.jpg`,
     tags: ['Vue3', 'ECharts', 'TypeScript', 'Vite'],
     repoUrl: 'https://github.com/Yellow-4-2/echart',
     externalUrl: 'https://blog-d1gsewdvta071bc9e-1492806076.tcloudbaseapp.com/echart/',
